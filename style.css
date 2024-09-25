@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 50%;
+    padding: 0;
+    
+}
+header{   
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+}
+ul{
+    left: 50%;
+    display: inline-block;
+}
+#menu-section{
+    display: row;
+    left: 50%;
+    justify-content: center;
+}
+footer{
+    background-color: #dd3333;
+}
+.menu {
+    background-color: #dd3333;
+    color: #e8e6e3;
+    height: 70px;
+ 
+}
+
+.menu__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.menu__links {
+    height: 100%;
+    display: flex;
+}
+
+.menu__item {
+    list-style: none;
+    position: relative;
+    height: 100%;
+ 
+}
+
+
+.menu__link {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+   
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    width: 150px;
+    justify-content: center;
+}
+
+.menu__link:hover {
+    background-color: #eb6868;
+}
+ 
+img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.colum {
+    flex: 25%;
+    padding: 5px;
+    position: relative;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-container img {
+    border-radius: 35px;
+    padding-top: 10px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.texto-encima {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    background-color: black;
+    opacity: 0.6;
+  
+}
+.texto-encima h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+.texto-encima p {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.img-container:hover .texto-encima {
+    opacity: 0; 
+    transition: opacity 0.4s ease; 
+}
+#contacto-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 30;
+
+}
+@media (max-width: 1000px) {
+    .colum {
+        flex: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .colum {
+        flex: 100%;
+    }
+}
